@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Todo</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+label {
+    display:block;
+    width:200px;
+    float: left;
+    text-align: right;
+    margin: 10px 5px;
+    clear:left;
+}
+input,select,textarea{
+    margin:10px 5px;
+    vertical-align:middle;
+}
+
+
+
+#submit{
+    margin-left: 200px;
+}
+
+form{
+   border: 5px ;
+   color: black;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+<fieldset>
+<legend>To Remember Anything</legend>
+<form action="create.html" method="get">
+
+<legend>TODO</legend>
+<label for="create-task" href="create.html">Add task:</label>
+<input id="create-task" type="text" autofocus required  id="create-task />
+<button>Add</button>
+<br/><br/>
+
+
+
+
+
+
+<label for="Dropdown">Priority of task:</label>
+<select>
+    
+
+<option value="low">LOW</option>
+<option value="medium">MEDIUM</option>
+<option value="high">HIGH</option>
+
+</select>
+
+
+<br/>
+<label for="Description">Description of task:</label>
+<textarea name="description"></textarea>
+<br/>
+
+
+
+<input id="submit" type="submit" value="Add" />
+
+</form>
+</fieldset>
+</div>
+</body>
+</html>
+

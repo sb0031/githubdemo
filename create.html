@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Todo</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+   
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h1{
+  text-align: center;
+  border-bottom: 1px;
+}
+</style>
+
+  
+  <body>
+  <h1>create task<h1>
+
+  <table style="width:80%">
+  <tr>
+    <th>s.no</th>
+    <th>projectname</th>
+    <th>description</th>
+    <th>due date</th>
+    <th>status</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>html</td>
+    <td>create web site</td>
+    <td><input type="date" name="date">
+    </td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>css</td>
+    <td>to view style sheet</td>
+    <td><input type="date" name="date"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>javascript</td>
+    <td>to view the validations</td>
+    <td><input type="date" name="date"></td>
+    <td><input type="text"></td>
+  </tr>
+</table>
+<br>
+
+<button onclick="myFunction()">create</button>
+<script type="text/javascript">
+  function myFunction()
+  {
+
+    var row=table.insertRow(0);
+    var cell1=row.insertCell(0);
+    var table=row.insertCell(1);
+    cell1.innerHTML="new task";
+    cell2.innerHTML="new task";
+    var cell1=row.insertCell(0);
+  }
+</script>
+</body>
+</html>
